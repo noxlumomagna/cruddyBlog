@@ -1,0 +1,19 @@
+<nav>
+    <div class="site-title">
+        <a href="/">
+            <h1>CRUDDY</h1>
+        </a>
+    </div>
+    <% if(user) { %>
+        <ul>
+            <li><a href="/blogs/create">New Blog</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/auth/logout">Logout</a></li>
+        </ul>
+        <% } else { %>
+            <ul>
+                <li><a href="/auth/register">Register</a></li>
+                <li><a href="/auth/login">Login</a></li>
+            </ul>
+            <% } %>
+</nav>
